@@ -2,6 +2,7 @@
 <html lang="en">
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <title>Status Reporting</title>
@@ -24,18 +25,18 @@
         <div class="bootstrap-iso"> 
             <div class="container-fluid">
                 <div class="jumbotron">
-                    <div class="row ">
-                        <div class="col-md-4 col-sm-3 ">
+                    <div class="row  ">
+                        <div class="col-md-6 col-sm-6 col-lg-12  ">
                              <div class="btn btn-info col-sm-offset-3">daily status enter here</div>
                             <form action="statussend" class="form-horizontal" method="post">
-                                <div cla="col-sm-8">
+                                <div cla="col-md-6 col-sm-6 col-lg-6 ">
                                 <div class="panel panel-default ">
                                     <div class="panel-body ">
                                         <div class="form-group ">
-                                            <label class=" col-sm-4  " for="date">
+                                            <label class=" col-md-6 col-sm-6 col-lg-12  " for="date">
                                                 Date:
                                             </label>
-                                            <div class="col-sm-5">
+                                            <div class="col-xs-6 col-md-6 col-sm-6 col-lg-12 ">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">
                                                         <i class="fa fa-calendar">
@@ -47,12 +48,12 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label  class=" col-sm-1  " for="comment">Comment:</label>
+                                            <label  class=" col-xs-6 col-md-6 col-sm-6 col-lg-12 " for="comment">Comment:</label>
                                             <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
                                         </div>
 
                                         <div class="form-group">
-                                            <div class="col-sm-3 col-sm-offset-4">
+                                            <div class=" col-xs-6 col-md-6 col-sm-6 col-lg-12 col-sm-offset-4">
                                                 <input name="_honey" style="display:none" type="text"/>
                                                 <button class="btn btn-info " name="submit" type="submit" >
                                                     Submit
@@ -67,17 +68,17 @@
                                 </div>
                             </form>
                             <br><br>
-                            <div class="btn btn-info col-sm-offset-3"> weekly get status here</div>
+                            <div class="btn btn-info col-xs-6  col-md-6 col-sm-6 col-lg-3  col-sm-offset-3"> weekly  status  get here</div>
                             <div class="panel panel-default ">
                                 <div class="panel-body">
                                     <form action="getdata" method="get">
 
                                         <div>
-                                            <label class="col-sm-6 requiredField"  for="date">
+                                            <label class=" col-xs-6col-md-6 col-sm-6 col-lg-12  requiredField"  for="date">
                                                 start date:
 
                                             </label>
-                                            <div class="col-sm-6">
+                                            <div class=" col-xs-6 col-md-6 col-sm-6 col-lg-12 ">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">
                                                         <i class="fa fa-calendar">
@@ -89,10 +90,10 @@
                                         </div>
                                         <hr><hr><hr><hr>
                                         <div>
-                                            <label class="col-sm-6" for="date">
+                                            <label class=" col-xs-6 col-md-6 col-sm-6 col-lg-12 " for="date">
                                                 End Date:
                                             </label>
-                                            <div class="col-sm-6">
+                                            <div class=" col-xs-6 col-md-6 col-sm-6 col-lg-12 ">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">
                                                         <i class="fa fa-calendar">
@@ -102,7 +103,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group col-sm-1 col-sm-offset-3">
+                                        <div class="form-group  col-xs-6 col-md-6 col-sm-6 col-lg-12  col-sm-offset-3">
                                             <br><br>
                                             <button type="submit" class="btn btn-info ">Get Data</button>
 

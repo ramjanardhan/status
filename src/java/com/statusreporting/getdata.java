@@ -58,8 +58,15 @@ public class getdata extends HttpServlet {
 
             }
             out.print("</table>");
-            out.println("< a heref=excelsheet.action <input type=button name=GetExcelSheet value=GetExcelSheet /></a>");
-            out.println();
+            
+      
+        out.print("<form action=\"");
+        out.print(response.encodeURL("excelsheet"));
+        out.print("\" ");
+        out.println("method=Get>");
+        out.println("<br>");
+        out.println("<input type=submit value=\"Generate Excel Sheet\">");
+        out.println("</form>");	
         } catch (Exception se) {
             se.printStackTrace();
         }
