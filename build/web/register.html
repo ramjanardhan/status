@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            a {
+                text-decoration: none ;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="regdata" method="post">
+            <table border="2" align="center">
+                <tr><td>    first name:</td><td> <input type="text" name="fname" id="fname" placeholder="first name" /></td></tr>
+                <tr><td>    last name:</td><td><input type="text" name="lname" id="lname" placeholder="last name"/></td></tr>
+                <tr><td>    email:</td><td><input type="text" name="email" id="email" placeholder="email"/></td></tr>
+                <tr><td>    password:</td><td><input type="password" name="pass" id="pass" placeholder="password"/></td></tr>
+                <tr><td>    confirm password:</td><td><input type="password" name="cpass" id="cpass" placeholder="confirm password"/></td></tr>
+                <tr><td>    phone:</td><td><input type="text" name="phone" id="phone" placeholder="phone number"/></td></tr>
+                <tr><td>    address:</td><td><input type="text" name="desc" placeholder="address" /></td></tr>
+                <tr><td colspan="2" align="center"><input type="button" value="reset" onclick="resetvalues()"/>
+                        <input type="submit" value="submit" name="add"/></td></tr>
+
+                <tr><td colspan="2" align="center" bgcolor="cyan" ><a href="login.jsp">click here to login page</a></td></tr>
+            </table>
+        </form>
+        <script>
+            function resetvalues()
+            {
+                var a = document.getElementById("fname").value = "";
+                var b = document.getElementById("lname").value = "";
+                var c = document.getElementById("email").value = "";
+
+                var e = document.getElementById("pass").value = "";
+                var f = document.getElementById("cpass").value = "";
+                var d = document.getElementById("phone").value = "";
+                var g = document.getElementById("desc").value = "";
+            }
+
+        </script>
+
+
+    </body>
+</html>
